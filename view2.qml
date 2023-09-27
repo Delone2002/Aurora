@@ -15,7 +15,7 @@ ApplicationWindow {
             height: parent.height
         ListView {
             id: listView
-            width: parent.width
+            width: parent.widthgit
             height: parent.height - addButton.height
             spacing: 4
             model: dataModel
@@ -25,7 +25,7 @@ ApplicationWindow {
                     anchors.centerIn: parent
                     text: model.text
                 }
-                MousegitArea {
+                MouseArea {
                     anchors.fill: parent
                     onClicked: dataModel.remove(model.index, 1)
                 }
