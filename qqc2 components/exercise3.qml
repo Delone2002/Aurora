@@ -23,7 +23,7 @@ ApplicationWindow {
         implicitWidth: parent.width
         implicitHeight: parent.height
 
-        contentItem: ColumnLayout {
+        ColumnLayout {
             TextField {
                 id: textNumber1
                 placeholderText: qsTr("Number 1")

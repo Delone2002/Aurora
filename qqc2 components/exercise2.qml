@@ -9,7 +9,7 @@ ApplicationWindow {
     height: 100
     ButtonGroup { id: radioGroup }
 
-    ColumnLayout {
+    Column {
         anchors.centerIn: parent
         Row {
             RadioButton {
@@ -29,7 +29,7 @@ ApplicationWindow {
         }
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: radioGroup.checkedButton.text
+            text: radioGroup.checkedButton ? radioGroup.checkedButton.text : "no data"
         }
     }
 }
